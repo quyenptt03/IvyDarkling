@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static Unity.Collections.AllocatorManager;
 
 public class Enemy : MonoBehaviour
 {
     public int damage;
     public int health;
-
-    private void OnTriggerEnter2D(Collider2D collision)
+	public GameObject blood;
+	private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
         {
@@ -19,8 +20,9 @@ public class Enemy : MonoBehaviour
     {
         health -= damage;
         if (health < 0)
-        {
-            Destroy(gameObject);
+		{
+			Destroy(gameObject);
         }
-    }
+		Instantiate(blood, transform.position, Quaternion.identity);
+	}
 }
