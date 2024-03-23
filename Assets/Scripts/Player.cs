@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -44,7 +44,7 @@ public class Player : MonoBehaviour
     public AudioClip hurtSound;
     public AudioClip pickupSound;
 
-
+    public GameObject blood;//Tao mau
 
     // Start is called before the first frame update
     void Start()
@@ -162,6 +162,8 @@ public class Player : MonoBehaviour
         {
             Destroy(gameObject);
         }
+		//Quaternion.identity nhan dang dau cham. Tao ban sao perfab tai vi tri position, k thay doi huong
+		Instantiate(blood, transform.position, Quaternion.identity);
     }
 
     public void Attack()
