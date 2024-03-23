@@ -264,6 +264,7 @@ MonoBehaviour:
   jumpSound: {fileID: 8300000, guid: 6efd68c935ed7c04b987bcf45c2eef40, type: 3}
   hurtSound: {fileID: 8300000, guid: f86aa61368e9dc848b908003bb4ba3ee, type: 3}
   pickupSound: {fileID: 8300000, guid: 10c96de6a03895c418e3508f3ceb43c4, type: 3}
+  blood: {fileID: 11709216059679173, guid: 4fcbc12c51169b6478c6b7f8d3fa238a, type: 3}
 --- !u!95 &46648450
 Animator:
   serializedVersion: 5
@@ -2838,6 +2839,10 @@ PrefabInstance:
       value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 5218164336306090455, guid: 18edeaf785148804b857b1b45b548b5e, type: 3}
+      propertyPath: blood
+      value: 
+      objectReference: {fileID: 11709216059679173, guid: 4fcbc12c51169b6478c6b7f8d3fa238a, type: 3}
+    - target: {fileID: 5218164336306090455, guid: 18edeaf785148804b857b1b45b548b5e, type: 3}
       propertyPath: health
       value: 3
       objectReference: {fileID: 0}
@@ -4236,6 +4241,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   health: 3
+  blood: {fileID: 11709216059679173, guid: 4fcbc12c51169b6478c6b7f8d3fa238a, type: 3}
   patrolPoints:
   - {fileID: 618458231}
   - {fileID: 464068910}
@@ -4722,6 +4728,10 @@ PrefabInstance:
       value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8682912061899478860, guid: 5c46f8b1a5fcc6c40aef671f07bbaa54, type: 3}
+      propertyPath: blood
+      value: 
+      objectReference: {fileID: 11709216059679173, guid: 4fcbc12c51169b6478c6b7f8d3fa238a, type: 3}
+    - target: {fileID: 8682912061899478860, guid: 5c46f8b1a5fcc6c40aef671f07bbaa54, type: 3}
       propertyPath: health
       value: 3
       objectReference: {fileID: 0}
@@ -4818,6 +4828,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 9168268264046329838, guid: 28528c8ce5869ea41bbfcbb5e73e00d8, type: 3}
+      propertyPath: blood
+      value: 
+      objectReference: {fileID: 11709216059679173, guid: 4fcbc12c51169b6478c6b7f8d3fa238a, type: 3}
     - target: {fileID: 9168268264046329838, guid: 28528c8ce5869ea41bbfcbb5e73e00d8, type: 3}
       propertyPath: health
       value: 3
