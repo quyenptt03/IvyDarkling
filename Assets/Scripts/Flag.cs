@@ -14,10 +14,11 @@ public class Flag : MonoBehaviour
 	}
 	private void OnTriggerEnter2D(Collider2D other)//kich hoat khi player cham vao la co chuyen level 2
 	{
-		if(other.CompareTag("Player"))
-		{
-			SceneManager.LoadScene(sceneName);
-		}	
-		PlayerPrefs.DeleteAll();//lam sach du lieu khi chuyen qua level moi
-	}
+		if (other.CompareTag("Player"))
+		{	SceneManager.LoadScene(sceneName);
+		}
+		//PlayerPrefs.DeleteAll();//lam sach du lieu khi chuyen qua level moi
+
+}
+
 }
