@@ -43,6 +43,8 @@ public class Player : MonoBehaviour
     public AudioClip jumpSound;
     public AudioClip hurtSound;
     public AudioClip pickupSound;
+    public AudioClip swingSound;
+    public AudioClip deathSound;
 
     public GameObject blood;//Tao mau
 
@@ -63,6 +65,8 @@ public class Player : MonoBehaviour
             {
                 FindObjectOfType<CameraShake>().Shake();
                 animator.SetTrigger("attack");
+                source.clip = swingSound;
+                source.Play();
                 nextAttackTime = Time.time + timeBetweenAttack;
             }
 
@@ -80,7 +84,7 @@ public class Player : MonoBehaviour
             facingRight = !facingRight;
         } else if(input < 0 && facingRight == true)
         {
-            transform.eulerAngles = new Vector3(0, 180, 0);
+            transform.eulerAngles = new Vector3(0, -180, 0);
             facingRight = !facingRight;
         }
 
@@ -157,9 +161,10 @@ public class Player : MonoBehaviour
         source.Play();
         FindObjectOfType<CameraShake>().Shake();
         health -= damage;
-        print(health);
         if(health <= 0)
         {
+            source.clip = deathSound;
+            source.Play();
             Destroy(gameObject);
         }
 		//Quaternion.identity nhan dang dau cham. Tao ban sao perfab tai vi tri position, k thay doi huong

@@ -5,7 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class LevelSelection : MonoBehaviour
 {
-   public void LoadLevel(string sceneName)
+    private void Start()
+    {
+        PlayerPrefs.DeleteAll();
+    }
+    public void LoadLevel(string sceneName)
 	{
 		SceneManager.LoadScene(sceneName);
 	}

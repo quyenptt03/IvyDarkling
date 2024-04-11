@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d4fa51975469550449a510c91875fc4a
+guid: 593c4e66a791a774489aaa71fdcbfe38
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,7 +121,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: bg (2)_0
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 169
+        width: 962
+        height: 729
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a9bf8bf026558c4cbba03ab8e1d7435
+      internalID: -332952578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg (2)_1
+      rect:
+        serializedVersion: 2
+        x: 1097
+        y: 333
+        width: 861
+        height: 698
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7081ba281d5e57d488abfd1a628ad9f1
+      internalID: -47294556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg (2)_2
+      rect:
+        serializedVersion: 2
+        x: 1973
+        y: 11
+        width: 655
+        height: 1028
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4748f33cea5be9c458d9784e50125367
+      internalID: -1893574114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg (2)_3
+      rect:
+        serializedVersion: 2
+        x: 2637
+        y: 101
+        width: 787
+        height: 981
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c0ae905e94622143b9a8a70c58b7595
+      internalID: 1017990120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +216,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bg (2)_0: -332952578
+      bg (2)_1: -47294556
+      bg (2)_2: -1893574114
+      bg (2)_3: 1017990120
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
