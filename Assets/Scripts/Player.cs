@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using static Cinemachine.DocumentationSortingAttribute;
 
 public class Player : MonoBehaviour
 {
-    public float speed;
+	public float speed;
     Rigidbody2D rb;
     bool facingRight = true; // nhan vat luc dau quay ve ben phai
 
@@ -52,8 +54,11 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         source = GetComponent<AudioSource>();
-    }
-
+		initialPosition = transform.position;
+	}
+    public float maxVelocity = 15f;
+	Vector3 initialPosition;//khi bao giu vi tri dau game
+	public float minY = -23.2f;// khi roi xuong do cao nho hon thi bien mat tro lại ve cu
     // Update is called once per frame
     void Update()
     {
@@ -67,9 +72,22 @@ public class Player : MonoBehaviour
             }
 
         }
+		if (transform.position.y< minY)//tro lai ve vi tri cu khi roi xuong
+		{
+			health -= damage;
+			transform.position = initialPosition;
+			rb.velocity = Vector3.zero;
 
-        // lay gia tri theo chieu ngang khi nhan nut phai/trai, phai = 1, trai = -1
-        float input = Input.GetAxisRaw("Horizontal");
+		}
+        //Chet
+		if (health <= 0)
+		{
+			GameOver();
+			Destroy(gameObject);
+		}
+
+		// lay gia tri theo chieu ngang khi nhan nut phai/trai, phai = 1, trai = -1
+		float input = Input.GetAxisRaw("Horizontal");
         // di chuyen theo chieu ngang truc x, y giu nguyen
         rb.velocity = new Vector2(input*speed, rb.velocity.y);
 
@@ -160,7 +178,8 @@ public class Player : MonoBehaviour
         print(health);
         if(health <= 0)
         {
-            Destroy(gameObject);
+			GameOver();
+			Destroy(gameObject);
         }
 		//Quaternion.identity nhan dang dau cham. Tao ban sao perfab tai vi tri position, k thay doi huong
 		Instantiate(blood, transform.position, Quaternion.identity);
@@ -191,7 +210,12 @@ public class Player : MonoBehaviour
         damage = weapon.damage;
         attackRange = weapon.attackRange;
         weaponRenderer.sprite = weapon.graphic;
-
         Destroy(weapon.gameObject);
+    }
+    public GameObject gameOverPanel;
+    void GameOver()
+    {
+        gameOverPanel.SetActive(true);
+
     }
 }

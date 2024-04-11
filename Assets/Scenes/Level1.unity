@@ -265,6 +265,9 @@ MonoBehaviour:
   hurtSound: {fileID: 8300000, guid: f86aa61368e9dc848b908003bb4ba3ee, type: 3}
   pickupSound: {fileID: 8300000, guid: 10c96de6a03895c418e3508f3ceb43c4, type: 3}
   blood: {fileID: 11709216059679173, guid: 4fcbc12c51169b6478c6b7f8d3fa238a, type: 3}
+  maxVelocity: 15
+  minY: -23.2
+  gameOverPanel: {fileID: 0}
 --- !u!95 &46648450
 Animator:
   serializedVersion: 5
@@ -934,6 +937,7 @@ GameObject:
   m_Component:
   - component: {fileID: 370448976}
   - component: {fileID: 370448977}
+  - component: {fileID: 370448978}
   m_Layer: 0
   m_Name: platforms2_6
   m_TagString: Untagged
@@ -1008,6 +1012,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &370448978
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370448975}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0.070011765, y: 0, z: 0.11001849, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.8909903, y: 4.98}
+    newSize: {x: 5.8909903, y: 4.98}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.8909903, y: 4.98}
+  m_EdgeRadius: 0
 --- !u!1 &386092737
 GameObject:
   m_ObjectHideFlags: 0
@@ -1039,6 +1088,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9fdce9e75695dd4a8af2688a9e9ba69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameWinPanel: {fileID: 0}
   sceneName: Level2
 --- !u!61 &386092739
 BoxCollider2D:
@@ -1146,7 +1196,7 @@ Transform:
   m_GameObject: {fileID: 386092737}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.37, y: -1.25, z: 0}
+  m_LocalPosition: {x: 14.3, y: 5.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2220,7 +2270,7 @@ Transform:
   m_GameObject: {fileID: 800036893}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.88, y: -1.22, z: 0.15676293}
+  m_LocalPosition: {x: 29.1, y: -2.9, z: 0.15676293}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7983,11 +8033,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8572287432390940321, guid: 18edeaf785148804b857b1b45b548b5e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 45.9
+      value: 43.4
       objectReference: {fileID: 0}
     - target: {fileID: 8572287432390940321, guid: 18edeaf785148804b857b1b45b548b5e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.6
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 8572287432390940321, guid: 18edeaf785148804b857b1b45b548b5e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8253,6 +8303,10 @@ PrefabInstance:
     - target: {fileID: 7852633108140455178, guid: 612edc91057cde045bf9a45fbbe10bc5, type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7852633108140455178, guid: 612edc91057cde045bf9a45fbbe10bc5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9790,6 +9844,7 @@ MonoBehaviour:
   damage: 1
   health: 3
   blood: {fileID: 11709216059679173, guid: 4fcbc12c51169b6478c6b7f8d3fa238a, type: 3}
+  bloodDeath: {fileID: 0}
   patrolPoints:
   - {fileID: 618458231}
   - {fileID: 464068910}
