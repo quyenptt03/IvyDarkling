@@ -59,7 +59,6 @@ public class AttackEnemy : Enemy
             {
                 if (Time.time > nextAttackTime)
                 {
-                    Debug.Log("tan cong");
                     anim.SetTrigger("attack");
                     if (distanceToPlayer < attackRange)
                     {

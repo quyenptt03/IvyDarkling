@@ -36,7 +36,7 @@ Material:
     - _SmoothnessTextureChannel: 0
     m_Colors:
     - _CameraFadeParams: {r: 0, g: Infinity, b: 0, a: 0}
-    - _Color: {r: 0.5018867, g: 0.4038465, b: 0.093748614, a: 0.76862746}
-    - _Emission: {r: 0.27666524, g: 0.3660378, b: 0.22031331, a: 1}
-    - _SpecColor: {r: 0.13907243, g: 0.7660377, b: 0, a: 0.96862745}
+    - _Color: {r: 0.4415095, g: 0.20346059, b: 0, a: 0.76862746}
+    - _Emission: {r: 0.0241038, g: 0.2754717, b: 0, a: 1}
+    - _SpecColor: {r: 0.15433037, g: 0.4943396, b: 0, a: 0.96862745}
   m_BuildTextureStacks: []
