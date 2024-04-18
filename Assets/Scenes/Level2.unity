@@ -2042,54 +2042,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  volumeTrigger: {fileID: 519420032}
-  volumeLayer:
-    serializedVersion: 2
-    m_Bits: 1024
-  stopNaNPropagation: 1
-  finalBlitToCameraTarget: 0
-  antialiasingMode: 0
-  temporalAntialiasing:
-    jitterSpread: 0.75
-    sharpness: 0.25
-    stationaryBlending: 0.95
-    motionBlending: 0.85
-  subpixelMorphologicalAntialiasing:
-    quality: 2
-  fastApproximateAntialiasing:
-    fastMode: 0
-    keepAlpha: 0
-  fog:
-    enabled: 1
-    excludeSkybox: 1
-  debugLayer:
-    lightMeter:
-      width: 512
-      height: 256
-      showCurves: 1
-    histogram:
-      width: 512
-      height: 256
-      channel: 3
-    waveform:
-      exposure: 0.12
-      height: 256
-    vectorscope:
-      size: 256
-      exposure: 0.12
-    overlaySettings:
-      linearDepth: 0
-      motionColorIntensity: 4
-      motionGridSize: 64
-      colorBlindnessType: 0
-      colorBlindnessStrength: 1
-  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
-  m_ShowToolkit: 0
-  m_ShowCustomSorter: 0
-  breakBeforeColorGrading: 0
-  m_BeforeTransparentBundles: []
-  m_BeforeStackBundles: []
-  m_AfterStackBundles: []
 --- !u!1 &522653778
 GameObject:
   m_ObjectHideFlags: 0
@@ -10961,6 +10913,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Level3
+  youWinPanel: {fileID: 2059147578855041107}
 --- !u!1 &1151887224
 GameObject:
   m_ObjectHideFlags: 0
@@ -12684,67 +12637,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1001 &1596318551
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 7708887275669473842, guid: 5e5839c2775da324cb9920999e864e1c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 9.580814
-      objectReference: {fileID: 0}
-    - target: {fileID: 7708887275669473842, guid: 5e5839c2775da324cb9920999e864e1c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.2606261
-      objectReference: {fileID: 0}
-    - target: {fileID: 7708887275669473842, guid: 5e5839c2775da324cb9920999e864e1c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.6660223
-      objectReference: {fileID: 0}
-    - target: {fileID: 7708887275669473842, guid: 5e5839c2775da324cb9920999e864e1c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7708887275669473842, guid: 5e5839c2775da324cb9920999e864e1c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7708887275669473842, guid: 5e5839c2775da324cb9920999e864e1c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7708887275669473842, guid: 5e5839c2775da324cb9920999e864e1c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7708887275669473842, guid: 5e5839c2775da324cb9920999e864e1c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7708887275669473842, guid: 5e5839c2775da324cb9920999e864e1c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7708887275669473842, guid: 5e5839c2775da324cb9920999e864e1c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9087835592426783391, guid: 5e5839c2775da324cb9920999e864e1c, type: 3}
-      propertyPath: m_Name
-      value: Post Processing
-      objectReference: {fileID: 0}
-    - target: {fileID: 9087835592426783391, guid: 5e5839c2775da324cb9920999e864e1c, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 5e5839c2775da324cb9920999e864e1c, type: 3}
 --- !u!1 &1649003587
 GameObject:
   m_ObjectHideFlags: 0
@@ -15955,6 +15847,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3037772668547238210, guid: f761ea81919d1a242a5f80e5ef3eb9c1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3848006699111314290, guid: f761ea81919d1a242a5f80e5ef3eb9c1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 301.28278
@@ -15995,6 +15891,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5857070629613194627, guid: f761ea81919d1a242a5f80e5ef3eb9c1, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 6446ee255bc57dc4bb8b4e92017c7cfd, type: 2}
     - target: {fileID: 6514829441704344010, guid: f761ea81919d1a242a5f80e5ef3eb9c1, type: 3}
       propertyPath: m_Name
       value: GameEnd
@@ -16004,6 +15904,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f761ea81919d1a242a5f80e5ef3eb9c1, type: 3}
+--- !u!1 &2059147578855041107 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4219243494196343383, guid: f761ea81919d1a242a5f80e5ef3eb9c1, type: 3}
+  m_PrefabInstance: {fileID: 2059147578855041106}
+  m_PrefabAsset: {fileID: 0}
 --- !u!212 &2059648075276066829
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16783,9 +16688,9 @@ MonoBehaviour:
   swingSound: {fileID: 0}
   deathSound: {fileID: 0}
   blood: {fileID: 11709216059679173, guid: 4fcbc12c51169b6478c6b7f8d3fa238a, type: 3}
+  gameOverPanel: {fileID: 94772400}
   maxVelocity: 15
   minY: -10.5
-  gameOverPanel: {fileID: 94772400}
 --- !u!1 &3261304973458962382
 GameObject:
   m_ObjectHideFlags: 0
@@ -18806,7 +18711,6 @@ SceneRoots:
   - {fileID: 492014414}
   - {fileID: 1144395461}
   - {fileID: 1258972447}
-  - {fileID: 1596318551}
   - {fileID: 1151887225}
   - {fileID: 375304883}
   - {fileID: 16509086}

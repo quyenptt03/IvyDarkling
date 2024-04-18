@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Flag : MonoBehaviour
 {
 	public string sceneName;
+	public GameObject youWinPanel;
 	public void Start()
 	{
 		//Dat gia tri trong PlayerPrefs voi khoa la ten cua canh hien tai đang chay va gia tri la 1.
@@ -14,7 +15,11 @@ public class Flag : MonoBehaviour
 	}
 	private void OnTriggerEnter2D(Collider2D other)//kich hoat khi player cham vao la co chuyen level 2
 	{
-		if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && SceneManager.GetActiveScene().name == "Level3")
+        {
+			youWinPanel.SetActive(true);
+        }
+        else if (other.CompareTag("Player"))
 		{	SceneManager.LoadScene(sceneName);
 		}
 		//PlayerPrefs.DeleteAll();//lam sach du lieu khi chuyen qua level moi

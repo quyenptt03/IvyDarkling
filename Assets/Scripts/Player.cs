@@ -50,6 +50,8 @@ public class Player : MonoBehaviour
 
     public GameObject blood;//Tao mau
 
+    public GameObject gameOverPanel;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -215,7 +217,6 @@ public class Player : MonoBehaviour
         weaponRenderer.sprite = weapon.graphic;
         Destroy(weapon.gameObject);
     }
-    public GameObject gameOverPanel;
     void GameOver()
     {
         gameOverPanel.SetActive(true);
