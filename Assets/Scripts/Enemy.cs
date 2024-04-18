@@ -8,7 +8,6 @@ public class Enemy : MonoBehaviour
     public int damage;
     public int health;
 	public GameObject blood;
-	public GameObject bloodDeath;
 	private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
