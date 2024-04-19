@@ -16076,13 +16076,37 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1815427580433968525, guid: b1d7d6bba20f59f48bfda5329f042f3f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1815427580433968525, guid: b1d7d6bba20f59f48bfda5329f042f3f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1815427580433968525, guid: b1d7d6bba20f59f48bfda5329f042f3f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 852279199}
     - target: {fileID: 1815427580433968525, guid: b1d7d6bba20f59f48bfda5329f042f3f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1815427580433968525, guid: b1d7d6bba20f59f48bfda5329f042f3f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ShowPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 1815427580433968525, guid: b1d7d6bba20f59f48bfda5329f042f3f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Menu, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1815427580433968525, guid: b1d7d6bba20f59f48bfda5329f042f3f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 1743807857}
+    - target: {fileID: 1815427580433968525, guid: b1d7d6bba20f59f48bfda5329f042f3f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3965226449289009573, guid: b1d7d6bba20f59f48bfda5329f042f3f, type: 3}
       propertyPath: m_Name
       value: Canvas

@@ -1307,6 +1307,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panel: {fileID: 731605012124102659}
+  settingCanvas: {fileID: 2741164527493562947, guid: 21fa7c0614e796e4faee102650f01617, type: 3}
 --- !u!1 &6514829441704344010
 GameObject:
   m_ObjectHideFlags: 0

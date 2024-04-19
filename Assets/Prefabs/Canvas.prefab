@@ -645,16 +645,4 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1845221727326247518}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8642964802518155840, guid: 21fa7c0614e796e4faee102650f01617, type: 3}
-        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: ShowPanel
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
