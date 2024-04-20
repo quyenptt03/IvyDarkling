@@ -25,13 +25,19 @@ public class Menu : MonoBehaviour
 
 	public void ShowPanel(GameObject panel)
 	{
-		settingCanvas.SetActive(true);
+        settingCanvas.SetActive(true);
 		panel.SetActive(true);
-	}
+    }
 
 	public void ClosePanel(GameObject panel)
 	{
 		settingCanvas.SetActive(false);
 		panel.SetActive(false);
 	}
+
+	public void ResetLevel()
+	{
+		PlayerPrefs.DeleteAll();
+	}
+
 }

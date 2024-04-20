@@ -7,7 +7,7 @@ public class LevelSelection : MonoBehaviour
 {
     private void Start()
     {
-        PlayerPrefs.DeleteAll();
+        //PlayerPrefs.DeleteAll();
     }
     public void LoadLevel(string sceneName)
 	{
